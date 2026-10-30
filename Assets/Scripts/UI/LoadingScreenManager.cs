@@ -16,6 +16,15 @@ public class LoadingScreen : MonoBehaviour
 
     private void Start()
     {
+        if (loadingCanvas == null ||
+            mainMenuCanvas == null ||
+            loadingFill == null ||
+            percentageText == null)
+        {
+            Debug.LogError("LoadingScreen: One or more Inspector references are missing!", this);
+            return;
+        }
+
         loadingCanvas.SetActive(true);
         mainMenuCanvas.SetActive(false);
 
@@ -32,9 +41,7 @@ public class LoadingScreen : MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            float progress = Mathf.Clamp01(
-                elapsed / loadingDuration
-            );
+            float progress = Mathf.Clamp01(elapsed / loadingDuration);
 
             loadingFill.fillAmount = progress;
 
