@@ -9108,13 +9108,13 @@ MonoBehaviour:
   _loadingScreen: {fileID: 2123250847}
   _loadingFill: {fileID: 244388348}
   _loadingPercentage: {fileID: 369432249}
+  _loadingDuration: 2
   _mainMenu: {fileID: 1019608282}
   _playMenu: {fileID: 1283098606}
   _shopMenu: {fileID: 63400332}
   _leaderboardMenu: {fileID: 1101953544}
   _creditsMenu: {fileID: 1475137156}
   _settingsMenu: {fileID: 1163867543}
-  _loadingDuration: 3
 --- !u!1 &801838574
 GameObject:
   m_ObjectHideFlags: 0
